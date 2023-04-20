@@ -91,4 +91,10 @@ $clock-icon: '/assets/clock.png';
         line-height: 26px;
         letter-spacing: -0.01em;
     }
+
+    & &__separator {
+        width: 349px;
+        margin: 32px auto;
+        border: 1.5px solid #2B3953;
+    }
 }
