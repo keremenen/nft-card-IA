@@ -1,2 +1,14 @@
-/// Homepage Styles File
-/// Here we import all the Styles files we need for our Homepage.
+@import "../../../global-styles/style.scss";
+
+body {
+    background-color: $background-color;
+    box-sizing: border-box;
+}
+
+#home-page {
+    padding: 100px 20px;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        padding: 100px 10px;
+    }
+}

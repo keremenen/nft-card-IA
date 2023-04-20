@@ -2,7 +2,12 @@
 /// Here we define all the root variables we need for our project.
 /// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
 
-:root {
-    --color-primary: #5721f2;
-    --color-on-surface: #000;
-}
+$background-color: #0C1829;
+$box-color: #13243C;
+$title-color: #FFF;
+$primary-color: #04FCFA;
+$body-color: #9293B9;
+$stroke-color: #2B3953;
+
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 480px;

@@ -12,16 +12,33 @@
 
 <body>
   <div id="home-page">
-    <div>
-      <img src="/assets/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      <h1>INVO Academy JS Starter with Vite</h1>
-      <p>
-        See the README.md for more information on how to start your challenge.
-      </p>
-      <div class="card">
-        <button id="counter" type="button"></button>
+    <section class="nft-component">
+      <div class="nft-component__hero">
+        <div class="nft-component__hero-image"></div>
+        <div class="nft-component__text">
+          <div class="nft-component__title">Equilibrium #3429</div>
+          <div class="nft-component__description">Equilibrium is an NFT that will appeal to many
+            players.</div>
+        </div>
       </div>
-    </div>
+      <div class="nft-component__details">
+        <div class="nft-component__currency">
+          <div class="nft-component__currency-icon"></div>
+          <div class="nft-component__currency-value">0.041 ETH</div>
+        </div>
+        <div class="nft-component__expire">
+          <div class="nft-component__expire-icon"></div>
+          <div class="nft-component__time-left">3 days left</div>
+        </div>
+      </div>
+      <div class="nft-component__separator"></div>
+      <div class="nft-component__author">
+        <div class="nft-component__author-avatar">
+          <img src="/users/eva-smitch.png" alt="user-avatar" height="40" width="40" />
+        </div>
+        <div class="nft-component__author-name">Creation of <span>Eva Smitch</span></div>
+      </div>
+    </section>
   </div>
 
   <script type="module" src="/src/global-scripts/main.js"></script>
