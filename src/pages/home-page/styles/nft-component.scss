@@ -4,18 +4,28 @@ $diamond-icon: '/assets/diamond.png';
 $clock-icon: '/assets/clock.png';
 
 .nft-component {
-    width: 413px;
+    max-width: 413px;
     background-color: $box-color;
     margin: 0 auto;
     border-radius: 20px;
 
     & &__text {
-        margin-top: -150px;
+        margin-top: -91px;
         padding: 0 32px;
         max-width: 278px;
         display: flex;
         flex-direction: column;
         gap: 24px;
+    }
+
+    & &__hero-image {
+        background-image: url('#{$background-image}');
+        height: 343px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // background-size: 110%;
+        background-position: 50% 0%;
+        border-radius: 20px 20px 0 0;
     }
 
     & &__title {
@@ -104,6 +114,7 @@ $clock-icon: '/assets/clock.png';
 
     & &__author-avatar {
         height: 40px;
+        cursor: pointer;
         width: 40px;
     }
 
@@ -116,8 +127,61 @@ $clock-icon: '/assets/clock.png';
         letter-spacing: -0.01em;
 
         span {
+            cursor: pointer;
             font-weight: 600;
             color: $title-color;
+        }
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        max-width: 343px;
+
+        & &__hero-image {
+            background-size: 120%;
+            background-position: 57% 0%;
+        }
+
+        & &__text {
+            padding: 0 24px;
+            margin-top: -114px;
+            gap: 16px;
+        }
+
+        & &__details {
+            padding: 0 32px 0 24px;
+            margin-top: 24px;
+        }
+
+        & &__currency {
+            height: 26px;
+        }
+
+        & &__currency-value {
+            font-size: 16px;
+            margin-top: 3px;
+        }
+
+        & &__time-left {
+            font-size: 14px;
+        }
+
+        & &__expire {
+            margin-top: 0;
+            margin-right: 1px;
+        }
+
+        & &__separator {
+            width: 295px;
+            margin: 19px auto;
+        }
+
+        & &__author {
+            padding: 0 0 20px 24px;
+            gap: 16px;
+        }
+
+        & &__author-name {
+            font-size: 14px;
         }
     }
 }
