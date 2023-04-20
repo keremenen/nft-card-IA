@@ -1,0 +1,41 @@
+@import "../../../global-styles/style.scss";
+$background-image: '/images/background.jpg';
+
+.nft-component {
+    max-width: 413px;
+    background-color: $box-color;
+    margin: 0 auto;
+
+    & &__hero {
+        background: linear-gradient(180deg, rgba(19, 36, 59, 0) 0%, rgba(19, 36, 59, 0.74) 61.98%, #13243B 100%);
+        background-image: url('#{$background-image}');
+        position: relative;
+        min-height: 399px;
+        background-size: cover;
+    }
+
+    & &__text {
+        max-width: 278px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        left: 32px;
+        bottom: 32px;
+    }
+
+    & &__title {
+        color: $title-color;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    & &__description {
+        color: $body-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+        letter-spacing: -0.01em;
+    }
+}
