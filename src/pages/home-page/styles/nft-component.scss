@@ -9,23 +9,13 @@ $clock-icon: '/assets/clock.png';
     margin: 0 auto;
     border-radius: 20px;
 
-    & &__hero {
-        background: linear-gradient(180deg, rgba(19, 36, 59, 0) 0%, rgba(19, 36, 59, 0.74) 61.98%, #13243B 100%);
-        background-image: url('#{$background-image}');
-        border-radius: 20px 20px 0 0;
-        position: relative;
-        min-height: 399px;
-        background-size: cover;
-        padding: 0 32px;
-    }
-
     & &__text {
+        margin-top: -150px;
+        padding: 0 32px;
         max-width: 278px;
-        position: absolute;
         display: flex;
         flex-direction: column;
         gap: 24px;
-        bottom: 32px;
     }
 
     & &__title {
@@ -33,6 +23,11 @@ $clock-icon: '/assets/clock.png';
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
 
     & &__description {
@@ -44,7 +39,8 @@ $clock-icon: '/assets/clock.png';
     }
 
     & &__details {
-        padding: 8px 32px 0 32px;
+        margin-top: 40px;
+        padding: 0px 32px 0 32px;
         display: flex;
         justify-content: space-between;
     }
@@ -112,6 +108,7 @@ $clock-icon: '/assets/clock.png';
     }
 
     & &__author-name {
+        margin-top: 2px;
         color: $body-color;
         font-weight: 500;
         font-size: 16px;
