@@ -72,6 +72,24 @@
             gap: 16px;
         }
 
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        & &__hero-image {
+            top: 0;
+        }
+
+        & &__text-wrapper {
+            margin-top: calc(100vw - 520px);
+        }
+
+        & &__title {
+            font-size: 20px;
+        }
+
+        & &__description {
+            font-size: 16px;
+        }
 
     }
 }

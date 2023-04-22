@@ -74,5 +74,9 @@
         }
     }
 
-
+    @media screen and (max-width: $mobile-breakpoint) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 }
