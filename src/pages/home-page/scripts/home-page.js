@@ -3,5 +3,6 @@
 
 import '../styles/home-page.scss'
 import '../styles/nft-component.scss'
+import '../styles/details-component.scss'
 import '../styles/separator-component.scss'
 import '../styles/signature-component.scss'

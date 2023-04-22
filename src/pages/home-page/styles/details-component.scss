@@ -1,0 +1,78 @@
+@import "../../../global-styles/style.scss";
+
+.details-component {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    & &__currency {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    & &__currency-icon-wrapper {
+        margin-top: 1px;
+    }
+
+    & &__currency-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    & &__currency-value {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 160%;
+        letter-spacing: -0.01em;
+    }
+
+    & &__expire {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 2px;
+    }
+
+    & &__expire-icon-wrapper {
+        margin-top: 2px;
+    }
+
+    & &__expire-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    & &__expire-time-left {
+        color: $body-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        margin-top: 24px;
+
+        & &__currency-value {
+            font-size: 16px;
+        }
+
+        & &__expire {
+            margin-top: 0px;
+            margin-right: 9px;
+        }
+
+        & &__expire-time-left {
+            font-size: 14px;
+        }
+
+        & &__currency-value {
+            margin-top: 1px;
+        }
+    }
+
+
+}
