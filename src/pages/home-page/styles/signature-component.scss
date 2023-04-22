@@ -25,4 +25,10 @@
             color: $title-color;
         }
     }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        & &__author-name {
+            font-size: 14px;
+        }
+    }
 }

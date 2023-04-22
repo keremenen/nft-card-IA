@@ -1,7 +1,4 @@
 @import "../../../global-styles/style.scss";
-$background-image: '/images/background.jpg';
-$diamond-icon: '/assets/diamond.png';
-$clock-icon: '/assets/clock.png';
 
 .nft-component {
     max-width: 413px;
@@ -11,19 +8,21 @@ $clock-icon: '/assets/clock.png';
     margin: 0 auto;
     border-radius: 20px;
 
-
     & &__hero-image-wrapper {
+        height: 399px;
         width: calc(100% + 64px);
         margin-left: -32px;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
 
     & &__hero-image {
-        border-radius: 20px 20px 0 0;
         width: 100%;
     }
 
     & &__text-wrapper {
-        margin-top: -150px;
+        position: relative;
+        margin-top: -147px;
         max-width: 278px;
         display: flex;
         flex-direction: column;
@@ -51,6 +50,7 @@ $clock-icon: '/assets/clock.png';
     }
 
     & &__details-wrapper {
+        position: relative;
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
@@ -63,7 +63,7 @@ $clock-icon: '/assets/clock.png';
     }
 
     & &__currency-icon-wrapper {
-        margin-top: 2px;
+        margin-top: 1px;
     }
 
     & &__currency-icon {
@@ -95,13 +95,56 @@ $clock-icon: '/assets/clock.png';
         height: 20px;
     }
 
-    & &__time-left {
+    & &__expire-time-left {
         color: $body-color;
         font-weight: 500;
         font-size: 16px;
-        margin-top: -1px;
         line-height: 26px;
         letter-spacing: -0.01em;
     }
 
+    @media screen and (max-width: $tablet-breakpoint) {
+        max-width: 343px;
+        padding: 0 24px 19px 24px;
+
+
+        & &__hero-image-wrapper {
+            width: calc(100% + 48px);
+            margin-left: -24px;
+            height: 410px;
+        }
+
+        & &__hero-image {
+            transform: scale(1.20);
+            top: 33px;
+            left: -5px;
+            position: relative;
+        }
+
+        & &__text-wrapper {
+            margin-top: -181px;
+            gap: 16px;
+        }
+
+        & &__details-wrapper {
+            margin-top: 24px;
+        }
+
+        & &__currency-value {
+            font-size: 16px;
+        }
+
+        & &__expire {
+            margin-top: 0px;
+            margin-right: 9px;
+        }
+
+        & &__expire-time-left {
+            font-size: 14px;
+        }
+
+        & &__currency-value {
+            margin-top: 1px;
+        }
+    }
 }
