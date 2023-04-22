@@ -1,0 +1,7 @@
+@import "../../../global-styles/style.scss";
+
+.separator-component {
+    border: 1.5px solid $stroke-color;
+    width: 100%;
+    margin: 32px 0 24px 0;
+}
