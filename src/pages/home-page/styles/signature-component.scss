@@ -1,0 +1,28 @@
+@import "../../../global-styles/style.scss";
+
+.signature-component {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: 40px;
+
+    & &__author-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    & &__author-name {
+        margin-top: -1px;
+        box-sizing: border-box;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: -0.01em;
+        color: $body-color;
+
+        span {
+            font-weight: 600;
+            color: $title-color;
+        }
+    }
+}
